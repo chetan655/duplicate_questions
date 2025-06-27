@@ -1,5 +1,10 @@
+# streamlit
+# sklearn
+# fuzzywuzzy
+# distance
+# bs4
 streamlit
-sklearn
-fuzzywuzzy
+scikit-learn
+thefuzz
 distance
-bs4
+beautifulsoup4
