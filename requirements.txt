@@ -1,10 +1,8 @@
-# streamlit
-# sklearn
-# fuzzywuzzy
-# distance
-# bs4
 streamlit
 scikit-learn
-thefuzz
-distance
+pandas
+joblib
+nltk
 beautifulsoup4
+thefuzz
+python-Levenshtein
