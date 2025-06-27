@@ -7,3 +7,4 @@ beautifulsoup4
 thefuzz
 python-Levenshtein
 distance
+fuzzywuzzy
