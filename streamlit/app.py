@@ -8,7 +8,7 @@ base_path = os.path.dirname(__file__)
 
 model_path = os.path.join(base_path, 'model.pkl')
 
-cv = pickle.load(open(model_path, 'rb'))
+model = pickle.load(open(model_path, 'rb'))
 
 # model = pickle.load(open('model.pkl','rb'))
 
