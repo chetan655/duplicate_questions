@@ -5,7 +5,17 @@ from fuzzywuzzy import fuzz
 import pickle
 import numpy as np
 
-cv = pickle.load(open('cv.pkl','rb'))
+import os
+
+base_path = os.path.dirname(__file__)
+
+cv_path = os.path.join(base_path, 'cv.pkl')
+
+cv = pickle.load(open(cv_path, 'rb'))
+
+# cv = pickle.load(open('cv.pkl','rb'))
+
+stopwords_path = os.path.join(base_path, 'stopwords.pkl')
 
 
 def test_common_words(q1,q2):
@@ -22,7 +32,8 @@ def test_total_words(q1,q2):
 def test_fetch_token_features(q1, q2):
     SAFE_DIV = 0.0001
 
-    STOP_WORDS = pickle.load(open('stopwords.pkl','rb'))
+    # STOP_WORDS = pickle.load(open('stopwords.pkl','rb'))
+    STOP_WORDS = pickle.load(open(stopwords_path, 'rb'))
     # STOP_WORDS = stopwords.words('english')
 
     token_features = [0.0] * 8
